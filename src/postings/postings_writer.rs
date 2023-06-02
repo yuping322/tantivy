@@ -3,7 +3,37 @@ use std::io;
 use std::marker::PhantomData;
 use std::ops::Range;
 
+<<<<<<< HEAD
 use fnv::FnvHashMap;
+=======
+fn posting_from_field_entry(field_entry: &FieldEntry) -> Box<dyn PostingsWriter> {
+    match *field_entry.field_type() {
+        FieldType::Str(ref text_options) => text_options
+            .get_indexing_options()
+            .map(|indexing_options| match indexing_options.index_option() {
+                IndexRecordOption::Basic => {
+                    SpecializedPostingsWriter::<NothingRecorder>::new_boxed()
+                }
+                IndexRecordOption::WithFreqs => {
+                    SpecializedPostingsWriter::<TermFrequencyRecorder>::new_boxed()
+                }
+                IndexRecordOption::WithFreqsAndPositions => {
+                    SpecializedPostingsWriter::<TfAndPositionRecorder>::new_boxed()
+                }
+            })
+            .unwrap_or_else(SpecializedPostingsWriter::<NothingRecorder>::new_boxed),
+        FieldType::U64(_)
+        | FieldType::I64(_)
+        | FieldType::F64(_)
+        | FieldType::Date(_)
+        | FieldType::Bytes(_)
+        | FieldType::Vector(_)
+        | FieldType::HierarchicalFacet(_) => {
+            SpecializedPostingsWriter::<NothingRecorder>::new_boxed()
+        }
+    }
+}
+>>>>>>> vectors_sharedMemmory
 
 use super::stacker::Addr;
 use crate::fastfield::MultiValuedFastFieldWriter;
@@ -64,6 +94,7 @@ pub(crate) fn serialize_postings(
     let mut unordered_term_mappings: HashMap<Field, FnvHashMap<UnorderedTermId, TermOrdinal>> =
         HashMap::new();
 
+<<<<<<< HEAD
     let field_offsets = make_field_partition(&term_offsets);
     for (field, byte_offsets) in field_offsets {
         let field_entry = schema.get_field_entry(field);
@@ -81,6 +112,77 @@ pub(crate) fn serialize_postings(
                     })
                     .collect();
                 unordered_term_mappings.insert(field, mapping);
+=======
+    pub fn mem_usage(&self) -> usize {
+        self.term_index.mem_usage() + self.heap.mem_usage()
+    }
+
+    pub fn index_text(
+        &mut self,
+        doc: DocId,
+        field: Field,
+        token_stream: &mut dyn TokenStream,
+        term_buffer: &mut Term,
+    ) -> u32 {
+        let postings_writer =
+            self.per_field_postings_writers[field.field_id() as usize].deref_mut();
+        postings_writer.index_text(
+            &mut self.term_index,
+            doc,
+            field,
+            token_stream,
+            &mut self.heap,
+            term_buffer,
+        )
+    }
+
+    pub fn subscribe(&mut self, doc: DocId, term: &Term) -> UnorderedTermId {
+        let postings_writer =
+            self.per_field_postings_writers[term.field().field_id() as usize].deref_mut();
+            
+        postings_writer.subscribe(&mut self.term_index, doc, 0u32, term, &mut self.heap)
+    }
+
+    /// Serialize the inverted index.
+    /// It pushes all term, one field at a time, towards the
+    /// postings serializer.
+    pub fn serialize(
+        &self,
+        serializer: &mut InvertedIndexSerializer,
+        fieldnorm_readers: FieldNormReaders,
+        doc_id_map: Option<&DocIdMapping>,
+    ) -> crate::Result<HashMap<Field, FnvHashMap<UnorderedTermId, TermOrdinal>>> {
+        let mut term_offsets: Vec<(&[u8], Addr, UnorderedTermId)> =
+            Vec::with_capacity(self.term_index.len());
+        term_offsets.extend(self.term_index.iter());
+        term_offsets.sort_unstable_by_key(|&(k, _, _)| k);
+
+        let mut unordered_term_mappings: HashMap<Field, FnvHashMap<UnorderedTermId, TermOrdinal>> =
+            HashMap::new();
+
+        let field_offsets = make_field_partition(&term_offsets);
+
+        for (field, byte_offsets) in field_offsets {
+            let field_entry = self.schema.get_field_entry(field);
+
+            match *field_entry.field_type() {
+                FieldType::Str(_) | FieldType::HierarchicalFacet(_) => {
+                    // populating the (unordered term ord) -> (ordered term ord) mapping
+                    // for the field.
+                    let unordered_term_ids = term_offsets[byte_offsets.clone()]
+                        .iter()
+                        .map(|&(_, _, bucket)| bucket);
+                    let mapping: FnvHashMap<UnorderedTermId, TermOrdinal> = unordered_term_ids
+                        .enumerate()
+                        .map(|(term_ord, unord_term_id)| {
+                            (unord_term_id as UnorderedTermId, term_ord as TermOrdinal)
+                        })
+                        .collect();
+                    unordered_term_mappings.insert(field, mapping);
+                }
+                FieldType::U64(_) | FieldType::I64(_) | FieldType::F64(_) | FieldType::Date(_) => {}
+                FieldType::Bytes(_) | FieldType::Vector(_) => {}
+>>>>>>> vectors_sharedMemmory
             }
             FieldType::U64(_)
             | FieldType::I64(_)

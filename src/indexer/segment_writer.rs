@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 use super::doc_id_mapping::{get_doc_id_mapping_from_field, DocIdMapping};
 use super::operation::AddOperation;
 use crate::core::Segment;
 use crate::fastfield::{FastFieldsWriter, FastValue as _};
+=======
+use super::{doc_id_mapping::{get_doc_id_mapping_from_field, DocIdMapping}, operation::AddOperation};
+use crate::{fastfield::FastFieldsWriter, vector::VectorWriter, vector::VectorWriters};
+>>>>>>> vectors_sharedMemmory
 use crate::fieldnorm::{FieldNormReaders, FieldNormsWriter};
 use crate::indexer::json_term_writer::index_json_values;
 use crate::indexer::segment_serializer::SegmentSerializer;
@@ -61,6 +66,7 @@ pub struct SegmentWriter {
     pub(crate) segment_serializer: SegmentSerializer,
     pub(crate) fast_field_writers: FastFieldsWriter,
     pub(crate) fieldnorms_writer: FieldNormsWriter,
+    pub(crate) vector_writers: VectorWriters,
     pub(crate) doc_opstamps: Vec<Opstamp>,
     per_field_text_analyzers: Vec<TextAnalyzer>,
     term_buffer: Term,
@@ -82,6 +88,7 @@ impl SegmentWriter {
         segment: Segment,
         schema: Schema,
     ) -> crate::Result<SegmentWriter> {
+        let vectors_path = segment.relative_path(SegmentComponent::Vectors);
         let tokenizer_manager = segment.index().tokenizers().clone();
         let table_size = compute_initial_table_size(memory_budget_in_bytes)?;
         let segment_serializer = SegmentSerializer::for_segment(segment, false)?;
@@ -104,6 +111,9 @@ impl SegmentWriter {
                     .unwrap_or_default()
             })
             .collect();
+
+        
+
         Ok(SegmentWriter {
             max_doc: 0,
             ctx: IndexingContext::new(table_size),
@@ -114,7 +124,11 @@ impl SegmentWriter {
             doc_opstamps: Vec::with_capacity(1_000),
             per_field_text_analyzers,
             term_buffer: Term::new(),
+<<<<<<< HEAD
             schema,
+=======
+            vector_writers: VectorWriters::new(&vectors_path)
+>>>>>>> vectors_sharedMemmory
         })
     }
 
@@ -155,8 +169,19 @@ impl SegmentWriter {
 
     fn index_document(&mut self, doc: &Document) -> crate::Result<()> {
         let doc_id = self.max_doc;
+<<<<<<< HEAD
         for (field, values) in doc.get_sorted_field_values() {
             let field_entry = self.schema.get_field_entry(field);
+=======
+        let mut doc = add_operation.document;
+        self.doc_opstamps.push(add_operation.opstamp);
+
+        self.fast_field_writers.add_document(&doc);
+
+        for (field, field_values) in doc.get_sorted_field_values() {
+            let field_entry = schema.get_field_entry(field);
+            
+>>>>>>> vectors_sharedMemmory
             let make_schema_error = || {
                 crate::TantivyError::SchemaError(format!(
                     "Expected a {:?} for field {:?}",
@@ -164,13 +189,21 @@ impl SegmentWriter {
                     field_entry.name()
                 ))
             };
+            
             if !field_entry.is_indexed() {
                 continue;
             }
+<<<<<<< HEAD
             let (term_buffer, ctx) = (&mut self.term_buffer, &mut self.ctx);
             let postings_writer: &mut dyn PostingsWriter =
                 self.per_field_postings_writers.get_for_field_mut(field);
             term_buffer.set_field(field_entry.field_type().value_type(), field);
+=======
+            
+            let (term_buffer, multifield_postings) =
+                (&mut self.term_buffer, &mut self.multifield_postings);
+
+>>>>>>> vectors_sharedMemmory
             match *field_entry.field_type() {
                 FieldType::Facet(_) => {
                     for value in values {
@@ -280,6 +313,7 @@ impl SegmentWriter {
                         postings_writer.subscribe(doc_id, 0u32, term_buffer, ctx);
                     }
                 }
+<<<<<<< HEAD
                 FieldType::JsonObject(_) => {
                     let text_analyzer = &self.per_field_text_analyzers[field.field_id() as usize];
                     let json_values_it = values
@@ -293,6 +327,20 @@ impl SegmentWriter {
                         postings_writer,
                         ctx,
                     )?;
+=======
+                FieldType::Vector(_) => {
+                    for field_value in field_values {
+                        
+                        let field = field_value.field();                        
+                        let vec_val = field_value
+                            .value()
+                            .vec_value()
+                            .ok_or_else(make_schema_error)?;
+
+                        trace!("SegmentWritter::add_document vector {:?} - {:?}", field, vec_val);
+                        self.vector_writers.record(doc_id, field, vec_val);
+                    }
+>>>>>>> vectors_sharedMemmory
                 }
             }
         }

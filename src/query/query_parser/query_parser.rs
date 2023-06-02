@@ -400,6 +400,11 @@ impl QueryParser {
                 let bytes = base64::decode(phrase).map_err(QueryParserError::ExpectedBase64)?;
                 Ok(Term::from_field_bytes(field, &bytes))
             }
+            FieldType::Vector(_) => {
+                let v: Vec<f32> = phrase.split(',').map(|s| s.parse().unwrap()).collect();
+                let term = Term::from_field_vector(field, &v);
+                Ok(vec![(0, term)])
+            }
         }
     }
 

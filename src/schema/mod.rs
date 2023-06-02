@@ -125,6 +125,7 @@ mod json_object_options;
 mod named_field_document;
 mod numeric_options;
 mod text_options;
+mod vector_options;
 mod value;
 
 pub use self::bytes_options::BytesOptions;
@@ -134,6 +135,12 @@ pub(crate) use self::facet::FACET_SEP_BYTE;
 pub use self::facet::{Facet, FacetParseError};
 pub use self::facet_options::FacetOptions;
 pub use self::field::Field;
+<<<<<<< HEAD
+=======
+pub use self::term::Term;
+
+
+>>>>>>> vectors_sharedMemmory
 pub use self::field_entry::FieldEntry;
 pub use self::field_type::{FieldType, Type};
 pub use self::field_value::FieldValue;
@@ -148,6 +155,8 @@ pub use self::schema::{DocParsingError, Schema, SchemaBuilder};
 pub use self::term::Term;
 pub use self::text_options::{TextFieldIndexing, TextOptions, STRING, TEXT};
 pub use self::value::Value;
+
+pub use self::vector_options::VectorOptions;
 
 /// Validator for a potential `field_name`.
 /// Returns true if the name can be use for a field name.

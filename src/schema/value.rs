@@ -30,11 +30,64 @@ pub enum Value {
     Facet(Facet),
     /// Arbitrarily sized byte array
     Bytes(Vec<u8>),
+<<<<<<< HEAD
     /// Json object value.
     JsonObject(serde_json::Map<String, serde_json::Value>),
 }
 
 impl Eq for Value {}
+=======
+    /// Vector representing the embedding of a document
+    Vector(Vec<f32>)
+}
+
+impl Eq for Value {}
+impl PartialOrd for Value {
+    fn partial_cmp(&self, other: &Value) -> Option<Ordering> {
+        Some(self.cmp(other))
+    }
+}
+impl Ord for Value {
+    fn cmp(&self, other: &Self) -> Ordering {
+        match (self, other) {
+            (Value::Str(l), Value::Str(r)) => l.cmp(r),
+            (Value::PreTokStr(l), Value::PreTokStr(r)) => l.cmp(r),
+            (Value::U64(l), Value::U64(r)) => l.cmp(r),
+            (Value::I64(l), Value::I64(r)) => l.cmp(r),
+            (Value::Date(l), Value::Date(r)) => l.cmp(r),
+            (Value::Facet(l), Value::Facet(r)) => l.cmp(r),
+            (Value::Bytes(l), Value::Bytes(r)) => l.cmp(r),
+            (Value::Vector(l), Value::Vector(r)) => l.partial_cmp(r).unwrap(),
+            (Value::F64(l), Value::F64(r)) => {
+                match (l.is_nan(), r.is_nan()) {
+                    (false, false) => l.partial_cmp(r).unwrap(), // only fail on NaN
+                    (true, true) => Ordering::Equal,
+                    (true, false) => Ordering::Less, // we define NaN as less than -∞
+                    (false, true) => Ordering::Greater,
+                }
+            }
+            (Value::Str(_), _) => Ordering::Less,
+            (_, Value::Str(_)) => Ordering::Greater,
+            (Value::PreTokStr(_), _) => Ordering::Less,
+            (_, Value::PreTokStr(_)) => Ordering::Greater,
+            (Value::U64(_), _) => Ordering::Less,
+            (_, Value::U64(_)) => Ordering::Greater,
+            (Value::I64(_), _) => Ordering::Less,
+            (_, Value::I64(_)) => Ordering::Greater,
+            (Value::F64(_), _) => Ordering::Less,
+            (_, Value::F64(_)) => Ordering::Greater,
+            (Value::Date(_), _) => Ordering::Less,
+            (_, Value::Date(_)) => Ordering::Greater,
+            (Value::Facet(_), _) => Ordering::Less,
+            (_, Value::Facet(_)) => Ordering::Greater,
+            (Value::Vector(_), _) => Ordering::Less,
+            (_, Value::Vector(_)) => Ordering::Greater,
+        }
+    }
+}
+>>>>>>> vectors_sharedMemmory
+
+
 
 impl Serialize for Value {
     fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>
@@ -49,7 +102,11 @@ impl Serialize for Value {
             Value::Date(ref date) => time::serde::rfc3339::serialize(&date.into_utc(), serializer),
             Value::Facet(ref facet) => facet.serialize(serializer),
             Value::Bytes(ref bytes) => serializer.serialize_bytes(bytes),
+<<<<<<< HEAD
             Value::JsonObject(ref obj) => obj.serialize(serializer),
+=======
+            Value::Vector(ref vector) => vector.serialize(serializer)
+>>>>>>> vectors_sharedMemmory
         }
     }
 }
@@ -191,12 +248,18 @@ impl Value {
         }
     }
 
+<<<<<<< HEAD
     /// Returns the json object, provided the value is of the JsonObject type.
     ///
     /// Returns None if the value is not of type JsonObject.
     pub fn as_json(&self) -> Option<&Map<String, serde_json::Value>> {
         if let Value::JsonObject(json) = self {
             Some(json)
+=======
+    pub fn vec_value(&self) -> Option<&Vec<f32>> {
+        if let Value::Vector(bytes) = self {
+            Some(bytes)
+>>>>>>> vectors_sharedMemmory
         } else {
             None
         }
@@ -263,6 +326,12 @@ impl From<Vec<u8>> for Value {
     }
 }
 
+impl From<Vec<f32>> for Value {
+    fn from(vector: Vec<f32>) -> Value {
+        Value::Vector(vector)
+    }
+}
+
 impl From<PreTokenizedString> for Value {
     fn from(pretokenized_string: PreTokenizedString) -> Value {
         Value::PreTokStr(pretokenized_string)
@@ -304,8 +373,12 @@ mod binary_serialize {
     const DATE_CODE: u8 = 5;
     const F64_CODE: u8 = 6;
     const EXT_CODE: u8 = 7;
+<<<<<<< HEAD
     const JSON_OBJ_CODE: u8 = 8;
     const BOOL_CODE: u8 = 9;
+=======
+    const VEC_CODE: u8 = 8;
+>>>>>>> vectors_sharedMemmory
 
     // extended types
 
@@ -360,6 +433,10 @@ mod binary_serialize {
                 Value::Bytes(ref bytes) => {
                     BYTES_CODE.serialize(writer)?;
                     bytes.serialize(writer)
+                },
+                Value::Vector(ref vector) => {
+                    VEC_CODE.serialize(writer);
+                    vector.serialize(writer)
                 }
                 Value::JsonObject(ref map) => {
                     JSON_OBJ_CODE.serialize(writer)?;
@@ -400,6 +477,7 @@ mod binary_serialize {
                 }
                 HIERARCHICAL_FACET_CODE => Ok(Value::Facet(Facet::deserialize(reader)?)),
                 BYTES_CODE => Ok(Value::Bytes(Vec::<u8>::deserialize(reader)?)),
+                VEC_CODE => Ok(Value::Vector(Vec::<f32>::deserialize(reader)?)),
                 EXT_CODE => {
                     let ext_type_code = u8::deserialize(reader)?;
                     match ext_type_code {

@@ -22,6 +22,7 @@ mod scorer;
 mod term_query;
 mod union;
 mod weight;
+mod vector_query;
 
 #[cfg(test)]
 mod vec_docset;
@@ -55,6 +56,11 @@ pub use self::union::Union;
 #[cfg(test)]
 pub use self::vec_docset::VecDocSet;
 pub use self::weight::Weight;
+<<<<<<< HEAD
+=======
+pub use tantivy_query_grammar::Occur;
+pub use self::vector_query::VectorQuery;
+>>>>>>> vectors_sharedMemmory
 
 #[cfg(test)]
 mod tests {

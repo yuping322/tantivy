@@ -122,6 +122,7 @@ impl Document {
         self.add_field_value(field, value.into());
     }
 
+<<<<<<< HEAD
     /// Add a JSON field
     pub fn add_json_object(
         &mut self,
@@ -135,6 +136,15 @@ impl Document {
     pub fn add_field_value<T: Into<Value>>(&mut self, field: Field, typed_val: T) {
         let value = typed_val.into();
         let field_value = FieldValue { field, value };
+=======
+    /// Add a vector field
+    pub fn add_vector<T: Into<Vec<f32>>>(&mut self, field: Field, value: T) {
+        self.add(FieldValue::new(field, Value::Vector(value.into())))
+    }
+
+    /// Add a field value
+    pub fn add(&mut self, field_value: FieldValue) {
+>>>>>>> vectors_sharedMemmory
         self.field_values.push(field_value);
     }
 

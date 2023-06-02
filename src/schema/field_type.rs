@@ -13,6 +13,9 @@ use crate::time::OffsetDateTime;
 use crate::tokenizer::PreTokenizedString;
 use crate::DateTime;
 
+use super::vector_options;
+use super::VectorOptions;
+
 /// Possible error that may occur while parsing a field value
 /// At this point the JSON is known to be valid.
 #[derive(Debug, PartialEq, Error)]
@@ -58,6 +61,7 @@ pub enum Type {
     /// `tantivy::schema::Facet`. Passed as a string in JSON.
     Facet = b'h',
     /// `Vec<u8>`
+<<<<<<< HEAD
     Bytes = b'b',
     /// Leaf in a Json object.
     Json = b'j',
@@ -118,6 +122,11 @@ impl Type {
             _ => None,
         }
     }
+=======
+    Bytes,
+    /// Vector
+    Vector,
+>>>>>>> vectors_sharedMemmory
 }
 
 /// A `FieldType` describes the type (text, u64) of a field as well as
@@ -143,8 +152,13 @@ pub enum FieldType {
     Facet(FacetOptions),
     /// Bytes (one per document)
     Bytes(BytesOptions),
+<<<<<<< HEAD
     /// Json object
     JsonObject(JsonObjectOptions),
+=======
+    /// Vector
+    Vector(VectorOptions),
+>>>>>>> vectors_sharedMemmory
 }
 
 impl FieldType {
@@ -159,7 +173,11 @@ impl FieldType {
             FieldType::Date(_) => Type::Date,
             FieldType::Facet(_) => Type::Facet,
             FieldType::Bytes(_) => Type::Bytes,
+<<<<<<< HEAD
             FieldType::JsonObject(_) => Type::Json,
+=======
+            FieldType::Vector(_) => Type::Vector,
+>>>>>>> vectors_sharedMemmory
         }
     }
 
@@ -174,6 +192,7 @@ impl FieldType {
             FieldType::Date(ref date_options) => date_options.is_indexed(),
             FieldType::Facet(ref _facet_options) => true,
             FieldType::Bytes(ref bytes_options) => bytes_options.is_indexed(),
+<<<<<<< HEAD
             FieldType::JsonObject(ref json_object_options) => json_object_options.is_indexed(),
         }
     }
@@ -229,6 +248,9 @@ impl FieldType {
             FieldType::Facet(_) => false,
             FieldType::Bytes(ref bytes_options) => bytes_options.fieldnorms(),
             FieldType::JsonObject(ref _json_object_options) => false,
+=======
+            FieldType::Vector(ref vector_options) => vector_options.is_indexed(),
+>>>>>>> vectors_sharedMemmory
         }
     }
 
@@ -270,9 +292,21 @@ impl FieldType {
                     None
                 }
             }
+<<<<<<< HEAD
             FieldType::JsonObject(ref json_obj_options) => json_obj_options
                 .get_text_indexing_options()
                 .map(TextFieldIndexing::index_option),
+=======
+            FieldType::Vector(ref vector_options) => {
+                // I'm assuming that a vector field will be always indexed using its vector record
+                // options
+                if vector_options.is_indexed() {
+                    Some(IndexRecordOption::Basic)
+                } else {
+                    None
+                }
+            }
+>>>>>>> vectors_sharedMemmory
         }
     }
 
@@ -313,8 +347,40 @@ impl FieldType {
                         json: JsonValue::String(field_text),
                     }),
                 }
+<<<<<<< HEAD
             }
             JsonValue::Number(field_val_num) => match self {
+=======
+                FieldType::Str(_) => Ok(Value::Str(field_text.clone())),
+                FieldType::U64(_) | FieldType::I64(_) | FieldType::F64(_) => Err(
+                    ValueParsingError::TypeError(format!("Expected an integer, got {:?}", json)),
+                ),
+                FieldType::HierarchicalFacet(_) => Ok(Value::Facet(Facet::from(field_text))),
+                FieldType::Bytes(_) => base64::decode(field_text).map(Value::Bytes).map_err(|_| {
+                    ValueParsingError::InvalidBase64(format!(
+                        "Expected base64 string, got {:?}",
+                        field_text
+                    ))
+                }),
+                FieldType::Vector(_) => {
+                    let v: Vec<f32> = field_text
+                        .split(',')
+                        .map(|f| {
+                            f.parse()
+                                .map_err(|_| {
+                                    ValueParsingError::TypeError(format!(
+                                        "Expected vector like \"2.3,5.6,2.0\", got {:?}",
+                                        field_text
+                                    ))
+                                })
+                                .unwrap()
+                        })
+                        .collect();
+                    Ok(Value::Vector(v))
+                }
+            },
+            JsonValue::Number(ref field_val_num) => match *self {
+>>>>>>> vectors_sharedMemmory
                 FieldType::I64(_) | FieldType::Date(_) => {
                     if let Some(field_val_i64) = field_val_num.as_i64() {
                         Ok(Value::I64(field_val_i64))
@@ -345,6 +411,7 @@ impl FieldType {
                         })
                     }
                 }
+<<<<<<< HEAD
                 FieldType::Bool(_) => Err(ValueParsingError::TypeError {
                     expected: "a boolean",
                     json: JsonValue::Number(field_val_num),
@@ -354,6 +421,14 @@ impl FieldType {
                         expected: "a string",
                         json: JsonValue::Number(field_val_num),
                     })
+=======
+                FieldType::Str(_)
+                | FieldType::HierarchicalFacet(_)
+                | FieldType::Bytes(_)
+                | FieldType::Vector(_) => {
+                    let msg = format!("Expected a string, got {:?}", json);
+                    Err(ValueParsingError::TypeError(msg))
+>>>>>>> vectors_sharedMemmory
                 }
                 FieldType::JsonObject(_) => Err(ValueParsingError::TypeError {
                     expected: "a json object",

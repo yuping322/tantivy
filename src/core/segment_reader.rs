@@ -13,7 +13,18 @@ use crate::schema::{Field, FieldType, IndexRecordOption, Schema};
 use crate::space_usage::SegmentSpaceUsage;
 use crate::store::StoreReader;
 use crate::termdict::TermDictionary;
+<<<<<<< HEAD
 use crate::{DocId, Opstamp};
+=======
+use crate::DocId;
+use crate::vector::VectorReader;
+use crate::vector::VectorReaders;
+use fail::fail_point;
+use std::fmt;
+use std::sync::Arc;
+use std::sync::RwLock;
+use std::{collections::HashMap, io};
+>>>>>>> vectors_sharedMemmory
 
 /// Entry point to access all of the datastructures of the `Segment`
 ///
@@ -40,6 +51,7 @@ pub struct SegmentReader {
     positions_composite: CompositeFile,
     fast_fields_readers: Arc<FastFieldReaders>,
     fieldnorm_readers: FieldNormReaders,
+    pub vector_readers: Arc<RwLock<HashMap<Field, Arc<VectorReader>>>>,
 
     store_file: FileSlice,
     alive_bitset_opt: Option<AliveBitSet>,
@@ -190,6 +202,20 @@ impl SegmentReader {
             .map(|alive_bitset| alive_bitset.num_alive_docs() as u32)
             .unwrap_or(max_doc);
 
+        let vector_readers: Arc<RwLock<HashMap<Field, Arc<VectorReader>>>> = Default::default();
+        let vectors_path = segment.relative_path(SegmentComponent::Vectors);
+
+        {
+            let mut ww = vector_readers.write().unwrap();
+            for (field, field_entry) in schema.fields() {
+                if let FieldType::Vector(_) =  field_entry.field_type() {
+                    let field_str = field.field_id().to_string();
+                    
+                    ww.insert(field, Arc::new(VectorReader::new(vectors_path.join(field_str))));
+                }
+            }
+        }
+
         Ok(SegmentReader {
             inv_idx_reader_cache: Default::default(),
             num_docs,
@@ -204,6 +230,7 @@ impl SegmentReader {
             alive_bitset_opt,
             positions_composite,
             schema,
+            vector_readers
         })
     }
 
@@ -326,7 +353,12 @@ impl SegmentReader {
             self.positions_composite.space_usage(),
             self.fast_fields_readers.space_usage(),
             self.fieldnorm_readers.space_usage(),
+<<<<<<< HEAD
             self.get_store_reader(0)?.space_usage(),
+=======
+            todo!(),
+            self.get_store_reader()?.space_usage(),
+>>>>>>> vectors_sharedMemmory
             self.alive_bitset_opt
                 .as_ref()
                 .map(AliveBitSet::space_usage)

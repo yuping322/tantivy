@@ -6,6 +6,8 @@ use crate::schema::{
     TextOptions,
 };
 
+use super::VectorOptions;
+
 /// A `FieldEntry` represents a field and its configuration.
 /// `Schema` are a collection of `FieldEntry`
 ///
@@ -30,14 +32,40 @@ impl FieldEntry {
         }
     }
 
+<<<<<<< HEAD
     /// Creates a new text field entry.
+=======
+    /// Creates a new text field entry in the schema, given
+    /// a name, and some options.
+>>>>>>> vectors_sharedMemmory
     pub fn new_text(field_name: String, text_options: TextOptions) -> FieldEntry {
         Self::new(field_name, FieldType::Str(text_options))
     }
 
+<<<<<<< HEAD
     /// Creates a new u64 field entry.
     pub fn new_u64(field_name: String, int_options: NumericOptions) -> FieldEntry {
         Self::new(field_name, FieldType::U64(int_options))
+=======
+    /// Creates a new vector field entry in the schema, given
+    /// a name, and some options.
+    pub fn new_vector(field_name: String, vector_options: VectorOptions) -> FieldEntry {
+        assert!(is_valid_field_name(&field_name));
+        FieldEntry {
+            name: field_name,
+            field_type: FieldType::Vector(vector_options),
+        }
+    }
+
+    /// Creates a new u64 field entry in the schema, given
+    /// a name, and some options.
+    pub fn new_u64(field_name: String, field_type: IntOptions) -> FieldEntry {
+        assert!(is_valid_field_name(&field_name));
+        FieldEntry {
+            name: field_name,
+            field_type: FieldType::U64(field_type),
+        }
+>>>>>>> vectors_sharedMemmory
     }
 
     /// Creates a new i64 field entry.
@@ -113,7 +141,11 @@ impl FieldEntry {
             FieldType::Str(ref options) => options.is_stored(),
             FieldType::Facet(ref options) => options.is_stored(),
             FieldType::Bytes(ref options) => options.is_stored(),
+<<<<<<< HEAD
             FieldType::JsonObject(ref options) => options.is_stored(),
+=======
+            FieldType::Vector(ref options) => options.is_stored()
+>>>>>>> vectors_sharedMemmory
         }
     }
 }
