@@ -1,0 +1,1346 @@
+Sorting...
+Full Text Search...
+cfortran/jammy 20210827-1 all
+  Header file permitting Fortran routines to be called in C/C++
+
+debichem-development/jammy 0.0.11 all
+  DebiChem C/C++/Fortran Development
+
+dh-fortran-mod/jammy 0.21 all
+  debhelper add-on to handle Fortran '.mod' files
+
+f2c/jammy 20200916-1 amd64
+  FORTRAN 77 to C/C++ translator
+
+f2j/jammy 0.8.1+dfsg-5 amd64
+  Fortran to Java compiler
+
+fcc/jammy 2.8-1build3 amd64
+  Script to compile C/C++ programs and link to Fortran libraries
+
+findent/jammy 3.1.7-1 amd64
+  indents/converts Fortran sources
+
+fortran-language-server/jammy 1.12.0-1 all
+  Fortran Language Server for the Language Server Protocol
+
+ftnchek/jammy 3.3.1-5build1 amd64
+  Semantic checker for Fortran 77 programs
+
+fweb/jammy 1.62-14 amd64
+  literate-programming tool for C/C++/Fortran/Ratfor
+
+gfortran/jammy 4:11.2.0-1ubuntu1 amd64
+  GNU Fortran 95 compiler
+
+gfortran-10/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04 amd64
+  GNU Fortran compiler
+
+gfortran-10-aarch64-linux-gnu/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-10-alpha-linux-gnu/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-10-arm-linux-gnueabi/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-10-arm-linux-gnueabihf/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-10-doc/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04 all
+  Documentation for the GNU Fortran compiler (gfortran)
+
+gfortran-10-hppa-linux-gnu/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-10-i686-linux-gnu/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-10-m68k-linux-gnu/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-10-mips-linux-gnu/jammy 10.3.0-1ubuntu1cross2 amd64
+  GNU Fortran compiler
+
+gfortran-10-mips64-linux-gnuabi64/jammy 10.3.0-1ubuntu1cross2 amd64
+  GNU Fortran compiler
+
+gfortran-10-mips64el-linux-gnuabi64/jammy 10.3.0-1ubuntu1cross2 amd64
+  GNU Fortran compiler
+
+gfortran-10-mipsel-linux-gnu/jammy 10.3.0-1ubuntu1cross2 amd64
+  GNU Fortran compiler
+
+gfortran-10-mipsisa32r6-linux-gnu/jammy 10.3.0-1ubuntu1cross2 amd64
+  GNU Fortran compiler
+
+gfortran-10-mipsisa32r6el-linux-gnu/jammy 10.3.0-1ubuntu1cross2 amd64
+  GNU Fortran compiler
+
+gfortran-10-mipsisa64r6-linux-gnuabi64/jammy 10.3.0-1ubuntu1cross2 amd64
+  GNU Fortran compiler
+
+gfortran-10-mipsisa64r6el-linux-gnuabi64/jammy 10.3.0-1ubuntu1cross2 amd64
+  GNU Fortran compiler
+
+gfortran-10-multilib/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04 amd64
+  GNU Fortran compiler (multilib support)
+
+gfortran-10-multilib-i686-linux-gnu/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for i386 architecture)
+
+gfortran-10-multilib-mips-linux-gnu/jammy 10.3.0-1ubuntu1cross2 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for mips architecture)
+
+gfortran-10-multilib-mips64-linux-gnuabi64/jammy 10.3.0-1ubuntu1cross2 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for mips64 architecture)
+
+gfortran-10-multilib-mips64el-linux-gnuabi64/jammy 10.3.0-1ubuntu1cross2 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for mips64el architecture)
+
+gfortran-10-multilib-mipsel-linux-gnu/jammy 10.3.0-1ubuntu1cross2 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for mipsel architecture)
+
+gfortran-10-multilib-mipsisa32r6-linux-gnu/jammy 10.3.0-1ubuntu1cross2 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for mipsr6 architecture)
+
+gfortran-10-multilib-mipsisa32r6el-linux-gnu/jammy 10.3.0-1ubuntu1cross2 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for mipsr6el architecture)
+
+gfortran-10-multilib-mipsisa64r6-linux-gnuabi64/jammy 10.3.0-1ubuntu1cross2 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for mips64r6 architecture)
+
+gfortran-10-multilib-mipsisa64r6el-linux-gnuabi64/jammy 10.3.0-1ubuntu1cross2 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for mips64r6el architecture)
+
+gfortran-10-multilib-powerpc-linux-gnu/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for powerpc architecture)
+
+gfortran-10-multilib-powerpc64-linux-gnu/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for ppc64 architecture)
+
+gfortran-10-multilib-s390x-linux-gnu/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for s390x architecture)
+
+gfortran-10-multilib-sparc64-linux-gnu/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for sparc64 architecture)
+
+gfortran-10-multilib-x86-64-linux-gnux32/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for x32 architecture)
+
+gfortran-10-powerpc-linux-gnu/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-10-powerpc64-linux-gnu/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-10-powerpc64le-linux-gnu/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-10-riscv64-linux-gnu/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-10-s390x-linux-gnu/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-10-sh4-linux-gnu/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-10-sparc64-linux-gnu/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-10-x86-64-linux-gnux32/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-11/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04 amd64
+  GNU Fortran compiler
+
+gfortran-11-aarch64-linux-gnu/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-11-alpha-linux-gnu/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-11-arm-linux-gnueabi/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-11-arm-linux-gnueabihf/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-11-doc/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04 all
+  Documentation for the GNU Fortran compiler (gfortran)
+
+gfortran-11-hppa-linux-gnu/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-11-i686-linux-gnu/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-11-m68k-linux-gnu/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-11-multilib/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04 amd64
+  GNU Fortran compiler (multilib support)
+
+gfortran-11-multilib-i686-linux-gnu/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for i386 architecture)
+
+gfortran-11-multilib-powerpc-linux-gnu/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for powerpc architecture)
+
+gfortran-11-multilib-powerpc64-linux-gnu/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for ppc64 architecture)
+
+gfortran-11-multilib-s390x-linux-gnu/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for s390x architecture)
+
+gfortran-11-multilib-sparc64-linux-gnu/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for sparc64 architecture)
+
+gfortran-11-multilib-x86-64-linux-gnux32/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for x32 architecture)
+
+gfortran-11-powerpc-linux-gnu/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-11-powerpc64-linux-gnu/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-11-powerpc64le-linux-gnu/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-11-riscv64-linux-gnu/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-11-s390x-linux-gnu/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-11-sh4-linux-gnu/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-11-sparc64-linux-gnu/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-11-x86-64-linux-gnux32/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-12/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04 amd64
+  GNU Fortran compiler
+
+gfortran-12-aarch64-linux-gnu/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-12-alpha-linux-gnu/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-12-arm-linux-gnueabi/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-12-arm-linux-gnueabihf/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-12-doc/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04 all
+  Documentation for the GNU Fortran compiler (gfortran)
+
+gfortran-12-hppa-linux-gnu/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-12-i686-linux-gnu/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-12-m68k-linux-gnu/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-12-multilib/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04 amd64
+  GNU Fortran compiler (multilib support)
+
+gfortran-12-multilib-i686-linux-gnu/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for i386 architecture)
+
+gfortran-12-multilib-powerpc-linux-gnu/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for powerpc architecture)
+
+gfortran-12-multilib-powerpc64-linux-gnu/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for ppc64 architecture)
+
+gfortran-12-multilib-s390x-linux-gnu/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for s390x architecture)
+
+gfortran-12-multilib-sparc64-linux-gnu/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for sparc64 architecture)
+
+gfortran-12-multilib-x86-64-linux-gnux32/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for x32 architecture)
+
+gfortran-12-powerpc-linux-gnu/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-12-powerpc64-linux-gnu/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-12-powerpc64le-linux-gnu/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-12-riscv64-linux-gnu/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-12-s390x-linux-gnu/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-12-sh4-linux-gnu/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-12-sparc64-linux-gnu/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-12-x86-64-linux-gnux32/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04 amd64
+  GNU Fortran compiler
+
+gfortran-9-aarch64-linux-gnu/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9-alpha-linux-gnu/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9-arm-linux-gnueabi/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9-arm-linux-gnueabihf/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9-doc/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04 all
+  Documentation for the GNU Fortran compiler (gfortran)
+
+gfortran-9-hppa-linux-gnu/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9-i686-linux-gnu/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9-m68k-linux-gnu/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9-mips-linux-gnu/jammy 9.4.0-1ubuntu1cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9-mips64-linux-gnuabi64/jammy 9.4.0-1ubuntu1cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9-mips64el-linux-gnuabi64/jammy 9.4.0-1ubuntu1cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9-mipsel-linux-gnu/jammy 9.4.0-1ubuntu1cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9-mipsisa32r6-linux-gnu/jammy 9.4.0-1ubuntu1cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9-mipsisa32r6el-linux-gnu/jammy 9.4.0-1ubuntu1cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9-mipsisa64r6-linux-gnuabi64/jammy 9.4.0-1ubuntu1cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9-mipsisa64r6el-linux-gnuabi64/jammy 9.4.0-1ubuntu1cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9-multilib/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04 amd64
+  GNU Fortran compiler (multilib support)
+
+gfortran-9-multilib-i686-linux-gnu/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for i386 architecture)
+
+gfortran-9-multilib-mips-linux-gnu/jammy 9.4.0-1ubuntu1cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for mips architecture)
+
+gfortran-9-multilib-mips64-linux-gnuabi64/jammy 9.4.0-1ubuntu1cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for mips64 architecture)
+
+gfortran-9-multilib-mips64el-linux-gnuabi64/jammy 9.4.0-1ubuntu1cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for mips64el architecture)
+
+gfortran-9-multilib-mipsel-linux-gnu/jammy 9.4.0-1ubuntu1cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for mipsel architecture)
+
+gfortran-9-multilib-mipsisa32r6-linux-gnu/jammy 9.4.0-1ubuntu1cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for mipsr6 architecture)
+
+gfortran-9-multilib-mipsisa32r6el-linux-gnu/jammy 9.4.0-1ubuntu1cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for mipsr6el architecture)
+
+gfortran-9-multilib-mipsisa64r6-linux-gnuabi64/jammy 9.4.0-1ubuntu1cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for mips64r6 architecture)
+
+gfortran-9-multilib-mipsisa64r6el-linux-gnuabi64/jammy 9.4.0-1ubuntu1cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for mips64r6el architecture)
+
+gfortran-9-multilib-powerpc-linux-gnu/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for powerpc architecture)
+
+gfortran-9-multilib-powerpc64-linux-gnu/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for ppc64 architecture)
+
+gfortran-9-multilib-s390x-linux-gnu/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for s390x architecture)
+
+gfortran-9-multilib-sparc64-linux-gnu/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for sparc64 architecture)
+
+gfortran-9-multilib-x86-64-linux-gnux32/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler (multilib support) (cross compiler for x32 architecture)
+
+gfortran-9-powerpc-linux-gnu/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9-powerpc64-linux-gnu/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9-powerpc64le-linux-gnu/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9-riscv64-linux-gnu/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9-s390x-linux-gnu/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9-sh4-linux-gnu/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9-sparc64-linux-gnu/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-9-x86-64-linux-gnux32/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 amd64
+  GNU Fortran compiler
+
+gfortran-aarch64-linux-gnu/jammy 4:11.2.0-1ubuntu1 amd64
+  GNU Fortran 95 compiler for the arm64 architecture
+
+gfortran-alpha-linux-gnu/jammy 4:11.2.0--1ubuntu1 amd64
+  GNU Fortran 95 compiler for the alpha architecture
+
+gfortran-arm-linux-gnueabi/jammy 4:11.2.0-1ubuntu1 amd64
+  GNU Fortran 95 compiler for the armel architecture
+
+gfortran-arm-linux-gnueabihf/jammy 4:11.2.0-1ubuntu1 amd64
+  GNU Fortran 95 compiler for the armhf architecture
+
+gfortran-doc/jammy 4:11.2.0-1ubuntu1 amd64
+  Documentation for the GNU Fortran compiler (gfortran)
+
+gfortran-hppa-linux-gnu/jammy 4:11.2.0--1ubuntu1 amd64
+  GNU Fortran 95 compiler for the hppa architecture
+
+gfortran-i686-linux-gnu/jammy 4:11.2.0-1ubuntu1 amd64
+  GNU Fortran 95 compiler for the i386 architecture
+
+gfortran-m68k-linux-gnu/jammy 4:11.2.0--1ubuntu1 amd64
+  GNU Fortran 95 compiler for the m68k architecture
+
+gfortran-mingw-w64/jammy 10.3.0-14ubuntu1+24.3 all
+  GNU Fortran compiler for MinGW-w64
+
+gfortran-mingw-w64-i686/jammy 10.3.0-14ubuntu1+24.3 all
+  GNU Fortran compiler for MinGW-w64 targeting Win32
+
+gfortran-mingw-w64-i686-posix/jammy 10.3.0-14ubuntu1+24.3 amd64
+  GNU Fortran compiler for MinGW-w64, Win32/POSIX
+
+gfortran-mingw-w64-i686-win32/jammy 10.3.0-14ubuntu1+24.3 amd64
+  GNU Fortran compiler for MinGW-w64, Win32/Win32
+
+gfortran-mingw-w64-x86-64/jammy 10.3.0-14ubuntu1+24.3 all
+  GNU Fortran compiler for MinGW-w64 targeting Win64
+
+gfortran-mingw-w64-x86-64-posix/jammy 10.3.0-14ubuntu1+24.3 amd64
+  GNU Fortran compiler for MinGW-w64, Win64/POSIX
+
+gfortran-mingw-w64-x86-64-win32/jammy 10.3.0-14ubuntu1+24.3 amd64
+  GNU Fortran compiler for MinGW-w64, Win64/Win32
+
+gfortran-mips-linux-gnu/jammy 4:10.2.0-1 amd64
+  GNU Fortran 95 compiler for the mips architecture
+
+gfortran-mips64-linux-gnuabi64/jammy 4:10.2.0-1 amd64
+  GNU Fortran 95 compiler for the mips64 architecture
+
+gfortran-mips64el-linux-gnuabi64/jammy 4:10.2.0-1 amd64
+  GNU Fortran 95 compiler for the mips64el architecture
+
+gfortran-mipsel-linux-gnu/jammy 4:10.2.0-1 amd64
+  GNU Fortran 95 compiler for the mipsel architecture
+
+gfortran-mipsisa32r6-linux-gnu/jammy 4:10.2.0-1 amd64
+  GNU Fortran 95 compiler for the mipsr6 architecture
+
+gfortran-mipsisa32r6el-linux-gnu/jammy 4:10.2.0-1 amd64
+  GNU Fortran 95 compiler for the mipsr6el architecture
+
+gfortran-mipsisa64r6-linux-gnuabi64/jammy 4:10.2.0-1 amd64
+  GNU Fortran 95 compiler for the mips64r6 architecture
+
+gfortran-mipsisa64r6el-linux-gnuabi64/jammy 4:10.2.0-1 amd64
+  GNU Fortran 95 compiler for the mips64r6el architecture
+
+gfortran-multilib/jammy 4:11.2.0-1ubuntu1 amd64
+  GNU Fortran 95 compiler (multilib files)
+
+gfortran-multilib-i686-linux-gnu/jammy 4:11.2.0-1ubuntu1 amd64
+  GNU Fortran 95 compiler for the i386 architecture
+
+gfortran-multilib-mips-linux-gnu/jammy 4:10.2.0-1 amd64
+  GNU Fortran 95 compiler for the mips architecture
+
+gfortran-multilib-mips64-linux-gnuabi64/jammy 4:10.2.0-1 amd64
+  GNU Fortran 95 compiler for the mips64 architecture
+
+gfortran-multilib-mips64el-linux-gnuabi64/jammy 4:10.2.0-1 amd64
+  GNU Fortran 95 compiler for the mips64el architecture
+
+gfortran-multilib-mipsel-linux-gnu/jammy 4:10.2.0-1 amd64
+  GNU Fortran 95 compiler for the mipsel architecture
+
+gfortran-multilib-mipsisa32r6-linux-gnu/jammy 4:10.2.0-1 amd64
+  GNU Fortran 95 compiler for the mipsr6 architecture
+
+gfortran-multilib-mipsisa32r6el-linux-gnu/jammy 4:10.2.0-1 amd64
+  GNU Fortran 95 compiler for the mipsr6el architecture
+
+gfortran-multilib-mipsisa64r6-linux-gnuabi64/jammy 4:10.2.0-1 amd64
+  GNU Fortran 95 compiler for the mips64r6 architecture
+
+gfortran-multilib-mipsisa64r6el-linux-gnuabi64/jammy 4:10.2.0-1 amd64
+  GNU Fortran 95 compiler for the mips64r6el architecture
+
+gfortran-multilib-powerpc-linux-gnu/jammy 4:11.2.0-1ubuntu1 amd64
+  GNU Fortran 95 compiler for the powerpc architecture
+
+gfortran-multilib-powerpc64-linux-gnu/jammy 4:11.2.0--1ubuntu1 amd64
+  GNU Fortran 95 compiler for the ppc64 architecture
+
+gfortran-multilib-s390x-linux-gnu/jammy 4:11.2.0-1ubuntu1 amd64
+  GNU Fortran 95 compiler for the s390x architecture
+
+gfortran-multilib-sparc64-linux-gnu/jammy 4:11.2.0--1ubuntu1 amd64
+  GNU Fortran 95 compiler for the sparc64 architecture
+
+gfortran-multilib-x86-64-linux-gnux32/jammy 4:11.2.0--1ubuntu1 amd64
+  GNU Fortran 95 compiler for the x32 architecture
+
+gfortran-powerpc-linux-gnu/jammy 4:11.2.0-1ubuntu1 amd64
+  GNU Fortran 95 compiler for the powerpc architecture
+
+gfortran-powerpc64-linux-gnu/jammy 4:11.2.0--1ubuntu1 amd64
+  GNU Fortran 95 compiler for the ppc64 architecture
+
+gfortran-powerpc64le-linux-gnu/jammy 4:11.2.0-1ubuntu1 amd64
+  GNU Fortran 95 compiler for the ppc64el architecture
+
+gfortran-riscv64-linux-gnu/jammy 4:11.2.0--1ubuntu1 amd64
+  GNU Fortran 95 compiler for the riscv64 architecture
+
+gfortran-s390x-linux-gnu/jammy 4:11.2.0-1ubuntu1 amd64
+  GNU Fortran 95 compiler for the s390x architecture
+
+gfortran-sh4-linux-gnu/jammy 4:11.2.0--1ubuntu1 amd64
+  GNU Fortran 95 compiler for the sh4 architecture
+
+gfortran-sparc64-linux-gnu/jammy 4:11.2.0--1ubuntu1 amd64
+  GNU Fortran 95 compiler for the sparc64 architecture
+
+gfortran-x86-64-linux-gnux32/jammy 4:11.2.0--1ubuntu1 amd64
+  GNU Fortran 95 compiler for the x32 architecture
+
+gftl-dev/jammy 1.3.0+is-really-1.2.7-1 all
+  Containers and iterators for Fortran
+
+gftl-shared-dev/jammy 1.0.7-2 amd64
+  Common gFTL containers of Fortran intrinsic types
+
+lib32gfortran-10-dev/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04 amd64
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-10-dev-amd64-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-10-dev-mips64-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-10-dev-mips64el-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-10-dev-mips64r6-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-10-dev-mips64r6el-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-10-dev-ppc64-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-10-dev-s390x-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-10-dev-sparc64-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-10-dev-x32-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-11-dev/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04 amd64
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-11-dev-amd64-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-11-dev-ppc64-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-11-dev-s390x-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-11-dev-sparc64-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-11-dev-x32-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-12-dev/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04 amd64
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-12-dev-amd64-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-12-dev-ppc64-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-12-dev-s390x-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-12-dev-sparc64-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-12-dev-x32-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-9-dev/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04 amd64
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-9-dev-amd64-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-9-dev-mips64-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-9-dev-mips64el-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-9-dev-mips64r6-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-9-dev-mips64r6el-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-9-dev-ppc64-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-9-dev-s390x-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-9-dev-sparc64-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran-9-dev-x32-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit development files)
+
+lib32gfortran5/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04 amd64
+  Runtime library for GNU Fortran applications (32bit)
+
+lib32gfortran5-amd64-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit)
+
+lib32gfortran5-mips64-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (32bit)
+
+lib32gfortran5-mips64el-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (32bit)
+
+lib32gfortran5-mips64r6-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (32bit)
+
+lib32gfortran5-mips64r6el-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (32bit)
+
+lib32gfortran5-ppc64-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit)
+
+lib32gfortran5-s390x-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit)
+
+lib32gfortran5-sparc64-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit)
+
+lib32gfortran5-x32-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (32bit)
+
+lib64gfortran-10-dev-i386-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (64bit development files)
+
+lib64gfortran-10-dev-mips-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (64bit development files)
+
+lib64gfortran-10-dev-mipsel-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (64bit development files)
+
+lib64gfortran-10-dev-mipsr6-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (64bit development files)
+
+lib64gfortran-10-dev-mipsr6el-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (64bit development files)
+
+lib64gfortran-10-dev-powerpc-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (64bit development files)
+
+lib64gfortran-10-dev-x32-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (64bit development files)
+
+lib64gfortran-11-dev-i386-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (64bit development files)
+
+lib64gfortran-11-dev-powerpc-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (64bit development files)
+
+lib64gfortran-11-dev-x32-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (64bit development files)
+
+lib64gfortran-12-dev-i386-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (64bit development files)
+
+lib64gfortran-12-dev-powerpc-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (64bit development files)
+
+lib64gfortran-12-dev-x32-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (64bit development files)
+
+lib64gfortran-9-dev-i386-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (64bit development files)
+
+lib64gfortran-9-dev-mips-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (64bit development files)
+
+lib64gfortran-9-dev-mipsel-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (64bit development files)
+
+lib64gfortran-9-dev-mipsr6-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (64bit development files)
+
+lib64gfortran-9-dev-mipsr6el-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (64bit development files)
+
+lib64gfortran-9-dev-powerpc-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (64bit development files)
+
+lib64gfortran-9-dev-x32-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (64bit development files)
+
+lib64gfortran5-i386-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (64bit)
+
+lib64gfortran5-mips-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (64bit)
+
+lib64gfortran5-mipsel-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (64bit)
+
+lib64gfortran5-mipsr6-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (64bit)
+
+lib64gfortran5-mipsr6el-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (64bit)
+
+lib64gfortran5-powerpc-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (64bit)
+
+lib64gfortran5-x32-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (64bit)
+
+libarpack2/jammy 3.8.0-1 amd64
+  Fortran77 subroutines to solve large scale eigenvalue problems
+
+libarpack2-dev/jammy 3.8.0-1 amd64
+  Fortran77 subroutines to solve large scale eigenvalue problems (development)
+
+libcaf-mpich-3/jammy 2.9.2-3 amd64
+  Co-Array Fortran libraries  (MPICH)
+
+libcaf-openmpi-3/jammy 2.9.2-3 amd64
+  Co-Array Fortran libraries  (OpenMPI)
+
+libccp4f0/jammy 6.5.1-5 amd64
+  CCP4 core functionality - fortran runtime
+
+libcoarrays-dev/jammy 2.9.2-3 amd64
+  Co-Array Fortran libraries
+
+libcoarrays-mpich-dev/jammy 2.9.2-3 amd64
+  Co-Array Fortran libraries for - development files (MPICH)
+
+libcoarrays-openmpi-dev/jammy 2.9.2-3 amd64
+  Co-Array Fortran libraries  - development files (OpenMPI)
+
+libetsf-io-dev/jammy 1.0.4-5 amd64
+  Static libraries and Fortran module files of ETSF_IO
+
+libextutils-f77-perl/jammy 1.26-1 all
+  module to compile and link FORTRAN 77 code for Perl modules
+
+libf2c2/jammy 20140711-1 amd64
+  Shared libraries for use with FORTRAN applications
+
+libf2j-java/jammy 0.8.1+dfsg-5 all
+  Java library port of Fortran numerical libraries
+
+libf95getdata7/jammy 0.11.0-3ubuntu1 amd64
+  library to read/write dirfile data - Fortran 95 bindings
+
+libfastjet-fortran-dev/jammy 3.4.0-1 amd64
+  Fortran bindings of FastJet - development files
+
+libfastjet-fortran0/jammy 3.4.0-1 amd64
+  Fortran bindings of FastJet
+
+libfckit-dev/jammy 0.9.5-1 amd64
+  Fortran toolkit for interoperating Fortran with C/C++
+
+libfckit-utils/jammy 0.9.5-1 all
+  Library Fortran toolkit for interoperating Fortran with C/C++
+
+libfckit0d/jammy 0.9.5-1 amd64
+  Library Fortran toolkit for interoperating Fortran with C/C++
+
+libfgetdata6/jammy 0.11.0-3ubuntu1 amd64
+  library to read/write dirfile data - Fortran 77 bindings
+
+libfortran-format-perl/jammy 0.90-2.1 all
+  Package to parse Fortran formats string descriptors in Perl
+
+libgfortran-10-dev/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04 amd64
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-alpha-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-amd64-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-arm64-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-armel-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-armhf-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-hppa-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-i386-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-m68k-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-mips-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-mips64-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-mips64el-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-mips64r6-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-mips64r6el-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-mipsel-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-mipsr6-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-mipsr6el-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-powerpc-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-ppc64-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-ppc64el-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-riscv64-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-s390x-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-sh4-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-sparc64-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-10-dev-x32-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-11-dev/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04 amd64
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-11-dev-alpha-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-11-dev-amd64-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-11-dev-arm64-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-11-dev-armel-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-11-dev-armhf-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-11-dev-hppa-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-11-dev-i386-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-11-dev-m68k-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-11-dev-powerpc-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-11-dev-ppc64-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-11-dev-ppc64el-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-11-dev-riscv64-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-11-dev-s390x-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-11-dev-sh4-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-11-dev-sparc64-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-11-dev-x32-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-12-dev/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04 amd64
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-12-dev-alpha-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-12-dev-amd64-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-12-dev-arm64-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-12-dev-armel-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-12-dev-armhf-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-12-dev-hppa-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-12-dev-i386-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-12-dev-m68k-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-12-dev-powerpc-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-12-dev-ppc64-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-12-dev-ppc64el-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-12-dev-riscv64-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-12-dev-s390x-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-12-dev-sh4-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-12-dev-sparc64-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-12-dev-x32-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04 amd64
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-alpha-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-amd64-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-arm64-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-armel-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-armhf-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-hppa-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-i386-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-m68k-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-mips-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-mips64-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-mips64el-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-mips64r6-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-mips64r6el-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-mipsel-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-mipsr6-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-mipsr6el-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-powerpc-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-ppc64-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-ppc64el-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-riscv64-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-s390x-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-sh4-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-sparc64-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran-9-dev-x32-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (development files)
+
+libgfortran5/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04 amd64
+  Runtime library for GNU Fortran applications
+
+libgfortran5-alpha-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-amd64-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-arm64-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-armel-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-armhf-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-hppa-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-i386-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-m68k-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-mips-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-mips64-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-mips64el-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-mips64r6-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-mips64r6el-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-mipsel-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-mipsr6-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-mipsr6el-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-powerpc-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-ppc64-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-ppc64el-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-riscv64-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-s390x-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-sh4-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-sparc64-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications
+
+libgfortran5-x32-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications
+
+libhdf5-fortran-102/jammy 1.10.7+repack-4ubuntu2 amd64
+  HDF5 Fortran runtime files - serial version
+
+libhdf5-hl-fortran-100/jammy 1.10.7+repack-4ubuntu2 amd64
+  HDF5 High Level Fortran runtime files - serial version
+
+libhdf5-mpich-fortran-102/jammy 1.10.7+repack-4ubuntu2 amd64
+  HDF5 Fortran runtime files - MPICH2 version
+
+libhdf5-mpich-hl-fortran-100/jammy 1.10.7+repack-4ubuntu2 amd64
+  HDF5 High Level Fortran runtime files - MPICH2 version
+
+libhdf5-openmpi-fortran-102/jammy 1.10.7+repack-4ubuntu2 amd64
+  HDF5 Fortran runtime files - OpenMPI version
+
+libhdf5-openmpi-hl-fortran-100/jammy 1.10.7+repack-4ubuntu2 amd64
+  HDF5 High Level Fortran runtime files - OpenMPI version
+
+libhealpix-dev/jammy 3.60+ds-1build1 amd64
+  HEALPix representation of spherical data - Fortran development library
+
+libhealpix0/jammy 3.60+ds-1build1 amd64
+  HEALPix representation of spherical data - Fortran library
+
+libjlapack-java/jammy 0.8~dfsg-5 all
+  LAPACK numerical subroutines translated from their Fortran 77 source
+
+libmed11/jammy 4.1.0+repack-3build1 amd64
+  Library to exchange meshed data (Fortran version)
+
+libmkl-gf-ilp64/jammy 2020.4.304-2ubuntu3 amd64
+  Intel® MKL: ILP64 interface library for the GNU Fortran compilers
+
+libmkl-gf-lp64/jammy 2020.4.304-2ubuntu3 amd64
+  Intel® MKL: LP64 interface library for the GNU Fortran compilers
+
+libmkl-gnu-thread/jammy 2020.4.304-2ubuntu3 amd64
+  Intel® MKL: OpenMP threading library for GNU Fortran/C compilers
+
+libmps-fortran-dev/jammy 3.2.1-5 amd64
+  Multiprecision polynomial solver (FORTRAN module development)
+
+libmps-fortran0/jammy 3.2.1-5 amd64
+  Multiprecision polynomial solver (FORTRAN module)
+
+libn32gfortran-10-dev-mips-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (n32 development files)
+
+libn32gfortran-10-dev-mips64-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (n32 development files)
+
+libn32gfortran-10-dev-mips64el-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (n32 development files)
+
+libn32gfortran-10-dev-mips64r6-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (n32 development files)
+
+libn32gfortran-10-dev-mips64r6el-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (n32 development files)
+
+libn32gfortran-10-dev-mipsel-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (n32 development files)
+
+libn32gfortran-10-dev-mipsr6-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (n32 development files)
+
+libn32gfortran-10-dev-mipsr6el-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (n32 development files)
+
+libn32gfortran-9-dev-mips-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (n32 development files)
+
+libn32gfortran-9-dev-mips64-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (n32 development files)
+
+libn32gfortran-9-dev-mips64el-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (n32 development files)
+
+libn32gfortran-9-dev-mips64r6-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (n32 development files)
+
+libn32gfortran-9-dev-mips64r6el-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (n32 development files)
+
+libn32gfortran-9-dev-mipsel-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (n32 development files)
+
+libn32gfortran-9-dev-mipsr6-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (n32 development files)
+
+libn32gfortran-9-dev-mipsr6el-cross/jammy 9.4.0-1ubuntu1cross1 all
+  Runtime library for GNU Fortran applications (n32 development files)
+
+libn32gfortran5-mips-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (n32)
+
+libn32gfortran5-mips64-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (n32)
+
+libn32gfortran5-mips64el-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (n32)
+
+libn32gfortran5-mips64r6-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (n32)
+
+libn32gfortran5-mips64r6el-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (n32)
+
+libn32gfortran5-mipsel-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (n32)
+
+libn32gfortran5-mipsr6-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (n32)
+
+libn32gfortran5-mipsr6el-cross/jammy 10.3.0-1ubuntu1cross2 all
+  Runtime library for GNU Fortran applications (n32)
+
+libnetcdff-dev/jammy 4.5.4+ds-1 amd64
+  creation, access, and sharing of scientific data in Fortran
+
+libnetcdff-doc/jammy 4.5.4+ds-1 all
+  NetCDF Fortran documentation
+
+libnetcdff7/jammy 4.5.4+ds-1 amd64
+  Fortran interface for scientific data access to large binary data
+
+libplplotfortran0/jammy 5.15.0+dfsg-24build2 amd64
+  Scientific plotting library (fortran bindings)
+
+libx32gfortran-10-dev/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04 amd64
+  Runtime library for GNU Fortran applications (x32 development files)
+
+libx32gfortran-10-dev-amd64-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (x32 development files)
+
+libx32gfortran-10-dev-i386-cross/jammy-updates,jammy-security 10.4.0-4ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (x32 development files)
+
+libx32gfortran-11-dev/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04 amd64
+  Runtime library for GNU Fortran applications (x32 development files)
+
+libx32gfortran-11-dev-amd64-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (x32 development files)
+
+libx32gfortran-11-dev-i386-cross/jammy-updates,jammy-security 11.3.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (x32 development files)
+
+libx32gfortran-12-dev/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04 amd64
+  Runtime library for GNU Fortran applications (x32 development files)
+
+libx32gfortran-12-dev-amd64-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (x32 development files)
+
+libx32gfortran-12-dev-i386-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (x32 development files)
+
+libx32gfortran-9-dev/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04 amd64
+  Runtime library for GNU Fortran applications (x32 development files)
+
+libx32gfortran-9-dev-amd64-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (x32 development files)
+
+libx32gfortran-9-dev-i386-cross/jammy-updates,jammy-security 9.5.0-1ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (x32 development files)
+
+libx32gfortran5/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04 amd64
+  Runtime library for GNU Fortran applications (x32)
+
+libx32gfortran5-amd64-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (x32)
+
+libx32gfortran5-i386-cross/jammy-updates,jammy-security 12.1.0-2ubuntu1~22.04cross1 all
+  Runtime library for GNU Fortran applications (x32)
+
+makedepf90/jammy 3.0.0-1 amd64
+  Fortran-90 dependency processor for Makefiles
+
+nec2c/jammy 1.3-4 amd64
+  Translation of the NEC2 FORTRAN source code to the C language
+
+python3-skbuild/jammy 0.11.1-2 all
+  improved build system generator for Python C/C++/Fortran/Cython extensions
+
+r-cran-inline/jammy 0.3.19-2 all
+  GNU R package to inline C, C++, Fortran functions from R
+
+ratfor/jammy 1.05-2 amd64
+  Rational Fortran preprocessor for Fortran 77
+
